@@ -79,6 +79,25 @@ GPA = [3.0, 3.5, 2.5]
 [PCA Theory](https://www.geeksforgeeks.org/ml-principal-component-analysispca/)  
 [PCA Numerical](https://www.youtube.com/watch?v=v5vEP9HgdZM)  
 [PCA Numerical](https://youtu.be/MLaJbA82nzk)  
+[Mam Notes Source 1](https://dugamakash.medium.com/dimensionality-reduction-zero-to-hero-part-i-2a821ad80099)  
+[Mam Notes Source 2](https://dugamakash.medium.com/dimensionality-reduction-zero-to-hero-part-ii-747bb1ff4012)  
+
+
+# Unit3
+#unit3 
+
+[Supervised Learning: Definition, how it works](https://www.javatpoint.com/supervised-machine-learning)  
+[KNN](https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning)  
+[Naive Bayes](https://www.javatpoint.com/machine-learning-naive-bayes-classifier)  
+[Descision Tree](https://www.javatpoint.com/machine-learning-decision-tree-classification-algorithm)  
+[Linear Regression](https://www.javatpoint.com/linear-regression-in-machine-learning)  
+[Logistic Regression](https://www.javatpoint.com/logistic-regression-in-machine-learning)  
+[SVM](https://www.javatpoint.com/machine-learning-support-vector-machine-algorithm)  
+[Regression vs classification](https://www.javatpoint.com/regression-vs-classification-in-machine-learning)  
+[Linear vs logistic](https://www.javatpoint.com/linear-regression-vs-logistic-regression-in-machine-learning)  
+
+
+
 
 
 
