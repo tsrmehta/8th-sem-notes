@@ -96,6 +96,18 @@ GPA = [3.0, 3.5, 2.5]
 [Regression vs classification](https://www.javatpoint.com/regression-vs-classification-in-machine-learning)  
 [Linear vs logistic](https://www.javatpoint.com/linear-regression-vs-logistic-regression-in-machine-learning)  
 
+# Unit4
+#unit4
+
+[Unsupervised Learning](https://www.javatpoint.com/unsupervised-machine-learning)  
+[K-mean](https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning)  
+// Ensemble Classifier:- Mam Notes
+[Boosting](https://www.javatpoint.com/what-is-boosting-in-data-mining)  
+[AdaBoost](https://www.analyticsvidhya.com/blog/2021/09/adaboost-algorithm-a-complete-guide-for-beginners/)  
+[Bagging](https://www.simplilearn.com/tutorials/machine-learning-tutorial/bagging-in-machine-learning)  
+[Random Forest](https://www.javatpoint.com/machine-learning-random-forest-algorithm)  
+
+
 
 
 
