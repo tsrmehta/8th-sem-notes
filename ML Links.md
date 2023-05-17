@@ -106,6 +106,27 @@ GPA = [3.0, 3.5, 2.5]
 [AdaBoost](https://www.analyticsvidhya.com/blog/2021/09/adaboost-algorithm-a-complete-guide-for-beginners/)  
 [Bagging](https://www.simplilearn.com/tutorials/machine-learning-tutorial/bagging-in-machine-learning)  
 [Random Forest](https://www.javatpoint.com/machine-learning-random-forest-algorithm)  
+[Confusion Matric](https://www.javatpoint.com/confusion-matrix-in-machine-learning)  
+[Auc-Roc](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/#Types_of_Predictive_Models)  
+[Mean Absolute devision](https://www.geeksforgeeks.org/mean-absolute-deviation/)  
+
+> ***Distribution of errors***
+> 
+> In machine learning, the distribution of errors refers to the pattern or characteristics of the errors made by a predictive model when compared to the true values or labels of the data. Understanding the distribution of errors is important for evaluating and improving the performance of machine learning models.
+>  
+>  Here are a few common types of error distributions in machine learning:
+>  
+>  1. Random Errors: Random errors occur when the model's predictions deviate from the true values in an unpredictable manner. These errors are typically caused by noise in the data or inherent randomness in the underlying process being modeled.
+>  
+>  2. Systematic Errors: Systematic errors, also known as bias, arise when the model consistently predicts values that are either higher or lower than the true values. These errors can occur due to flaws in the model's assumptions or limitations in the training data.
+>  
+>  3. Skewed Errors: Skewed errors occur when the model consistently overestimates or underestimates the true values in a particular range or direction. Skewed errors may indicate a problem with the model's calibration or an inherent bias in the training data.
+>  
+>  4. Heteroscedastic Errors: Heteroscedastic errors refer to a situation where the variability of the errors is not constant across the range of predicted values. In other words, the spread of errors varies based on the predicted values. This can indicate that the model's performance is influenced by specific factors or conditions.
+>  
+>  5. Outliers: Outliers are data points that significantly deviate from the expected pattern or distribution. Outliers can introduce substantial errors and may require special handling during model training or evaluation.
+>  
+>  Understanding the distribution of errors can help identify potential issues with a machine learning model and guide improvements. Techniques such as error analysis, visualizations, and diagnostic metrics (e.g., mean squared error, mean absolute error) can provide insights into the nature and magnitude of the errors.
 
 
 
