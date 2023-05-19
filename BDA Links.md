@@ -68,6 +68,8 @@ NoSql - youtuber notes
 [Data Lake](https://www.javatpoint.com/what-is-the-need-of-data-lake)  
 [ETL](https://www.geeksforgeeks.org/etl-process-in-data-warehouse/)  
 [Data Pipeline](https://www.geeksforgeeks.org/overview-of-data-pipeline/)  
+[Data Pipeline](https://www.ibm.com/topics/data-pipeline#:~:text=pipelines%20and%20IBM-,What%20is%20a%20data%20pipeline%3F,usually%20undergoes%20some%20data%20processing.)  
+
 
 > ***Foundation of big data***
 > 
@@ -398,6 +400,113 @@ NoSql - youtuber notes
 
 
 
+# Unit4
+#unit4
+
+[Data Processing](https://hevodata.com/learn/big-data-processing/#Structured-Data)  
+[Types and advantage](https://hevodata.com/learn/data-processing/#types)  
+Retrieving: Data Query and retrieval - no data  
+[Information Integration](https://www.geeksforgeeks.org/data-integration-in-data-mining/)  
+[Information Integration not main](https://www.engati.com/glossary/information-integration)  
+[Information Integration not main](https://www.oracle.com/technetwork/articles/datawarehouse/orcl-info-integration-chap-1-494739.pdf)  
+Big Data Processing pipelines - no data  
 
 
+> ***Analytical Operations***
+> 
+> Analytical operations in big data pipelines refer to the specific tasks and processes performed on data as it flows through a pipeline for analysis and insights generation. These operations are designed to handle large volumes of data, apply various transformations, and conduct complex computations to extract meaningful information. Here are some common analytical operations in big data pipelines:
+> 
+> 1. Data Ingestion: The first step in a big data pipeline is to ingest the data from various sources such as databases, data warehouses, log files, IoT devices, or streaming platforms. This involves extracting the data and loading it into a storage system or a data processing framework.
+> 
+> 2. Data Cleaning and Transformation: Data cleaning and transformation operations are applied to ensure the data is accurate, consistent, and in the desired format. This may involve handling missing values, standardizing data types, filtering out irrelevant data, and merging or joining multiple datasets.
+> 
+> 3. Data Aggregation and Summarization: Aggregation operations involve combining multiple data records into a single summary record based on specified criteria. Summarization operations compute statistical measures, such as counts, averages, sums, or percentiles, to provide high-level insights about the data.
+> 
+> 4. Data Filtering and Selection: Filtering operations involve selecting subsets of data based on specific conditions or criteria. This is useful for removing noise or irrelevant data and focusing on the relevant subset for analysis.
+> 
+> 5. Data Transformation and Enrichment: Transformation operations involve modifying the data to make it suitable for analysis. This may include feature engineering, scaling or normalizing variables, encoding categorical variables, or creating new derived features. Data enrichment involves augmenting the data with additional information from external sources to enhance its value for analysis.
+> 
+> 6. Statistical Analysis: Statistical analysis operations include various techniques to understand the distribution, relationships, and patterns in the data. This may involve calculating descriptive statistics, conducting hypothesis testing, performing correlation analysis, or fitting regression models.
+> 
+> 7. Machine Learning and Predictive Modeling: Machine learning operations involve training and deploying predictive models on big data. This includes tasks such as data preprocessing, feature selection, model training using algorithms like decision trees, random forests, or deep learning, and evaluating the model's performance on unseen data.
+> 
+> 8. Data Visualization and Reporting: Data visualization operations generate visual representations of data to facilitate understanding and communicate insights effectively. This can include generating charts, graphs, dashboards, or interactive visualizations to explore and present the analytical results.
+> 
+> 9. Real-time Analytics and Stream Processing: Real-time analytics operations focus on analyzing data in motion as it arrives in a streaming fashion. This involves processing streaming data in near real-time, applying transformations, aggregations, and analytics on the fly to extract insights from the data as it flows through the pipeline.
+>  
+>  10. Data Storage and Retrieval: Analytical operations may involve storing the processed data in a suitable storage system or database for future use or retrieval. This enables quick access to the results of the analysis or integration with other downstream systems.
+>  
+>  Big data pipelines typically leverage distributed computing frameworks like Apache Hadoop, Apache Spark, or cloud-based services to handle the volume, velocity, and variety of data efficiently. These frameworks provide scalability, fault tolerance, and parallel processing capabilities required for executing complex analytical operations on big data.
+>
+>***Some more info***
+>
+>Analytical operations in big data pipelines. After this video, you will be able to list common analytical operations within big data pipelines and describe sample applications for these analytical operations. In this lesson, we will be looking at analytical operations. These are operations used in analytics, which is the process of transforming data into insights for making more informed decisions. The purpose of analytical operations is to analyze the data to discover meaningful trends and patterns, in order to gain insights into the problem being studied. The knowledge gained from these insights ultimately lead to more informed decisions driven by data. Here are some common analytical operations that we will discuss in this lecture. Classification, clustering, path analysis and connectivity analysis. Let's start with classification. In classification, the goal is to predict a categorical target from the input data. A categorical target is one with discreet values or categories, instead of continuous values. For example, this diagram shows a classification task to determine the risk associated with a loan application. The input consists of the loan amount, applicant information such as income, age, debts, and a down payment. From this input data, the task is to determine whether the loan application is low risk or high risk. There are many classification techniques or algorithms that can be used for this problem. We will discuss a specific one, namely, decision tree in the next slide. The decision tree algorithm is one technique for classification. With this technique, decisions to perform the classification task are modeled as a tree structure. For the loan risk assessment problem, a simple decision tree is shown here, where the loan application is classified as being either low risk, or high risk, based on the loan amount. The applicant's income, and the applicant's age. The decision tree algorithm is implemented in many machine learning tools. This diagram shows how to specify decision tree from input data, KNIME. A graphical user-interface-based machine learning platform. Some examples of classification are the prediction of whether cells from a tumor are benign or malignant, categorization of handwritten digits as being zero, one, two, etc, up to nine. And determining whether a credit card transaction is legitimate or fraudulent, and classification of a loan application as being low-risk, medium-risk or high-risk, as you've seen. Another common analytical operation is cluster analysis. In cluster analysis, or clustering, the goal is to organize similar items in to groups of association. This diagram shows an example of cluster analysis in which customers are clustered into groups according to their preferences of movie genre. So, customers who like Sci-Fi movies are grouped together. Those who like drama movies are grouped together, and customers who like horror movies are grouped together. With this grouping, new movies, as well as other products, such as books, can be offered to the right type of costumers in order to generate interest and increase revenue. A simple and commonly used algorithm for cluster analysis is k-means. With k-means, samples are divided into k clusters. This clustering is done in order to minimize the variance or similarity between samples within the same cluster using some similarity measures such as distance. In this example, k is equal to three, and k-means divides the original data shown on the left into three clusters, shown as blue, green, and red on the chart on the right. The k-means clustering algorithm is implemented on many machine-learning platforms. The code here shows how to read in and parse input data, and perform k-means clustering on the data. Other examples of cluster analysis are grouping a company’s customer base into distinct segments for more effective targeted marketing, finding articles or webpages with similar topics for retrieving relevant information. Identification of areas in the city with rates of particular types of crimes for effective management of law enforcement resources, and determining different groups of weather patterns such as rainy, cold or snowy. Classification and cluster analysis are considered machine learning and analytical operations. There are also analytical operations from graph analytics, which is the field of analytics where the underlying data is structured as, or can be modeled as the set of graphs. One analytical operation using graphs as path analysis, which analyzes sequences of nodes and edges in a graph. A common application of path analysis is to find routes from one location to another location. For example, you might want to find the shortest path from your home to your work. This path may be different depending on conditions such as the day of the week, time of day, traffic congestion, weather and etc. This code shows some operations for path analysis on neo4j, which is a graph database system using a query language called Cypher. The first operation finds the shortest path between specific nodes in a graph. The second operation finds all the shortest paths in a graph. Connectivity analysis of graphs has to do with finding and tracking groups to determine interactions between entities. Entities in highly interacting groups are more connected to each other than to entities of other groups in a graph. These groups are called communities, and are interesting to analyze as they give insights into the degree and patterns of the interaction between entities, and also between communities. Some applications of connectivity analysis are to extract conversation threads. For example, by looking at tweets and retweets. To find interacting groups, for example, to determine which users are interacting with each other users, to find influencers, for example, to understand who are the main users leading to the conversation about a particular topic. Or, who do people pay attention to? This information can be used to identify the fewest number of people with the greatest influence. For example, for political campaigns, or marketing on social media. This code shows some operations for connectivity analysis on neo4j using the query language, Cypher, again. The first operation finds the degree of all the nodes in a graph, and the second creates a histogram of degrees for all nodes in a graph to determine how connected a node in a graph is, we need to look at its degree. The degree of a node is the number of edges connected to the node. A degree histogram shows the distribution of node degrees in the graph and is useful in comparing graphs and identifying types of users, for example, those who follow, versus those who are followed in social networks. To summarize and add to these techniques, the decision tree algorithm for classification and k-means algorithm for cluster analysis that we covered in this lecture are techniques from machine learning. Machine learning is a field of analytics focused on the study and construction of computer systems that can learn from data without being explicitly programmed. Our course on machine learning in this specialization will cover these algorithms in more detail, along with other algorithms used for classification and cluster analysis. As well as algorithms for other machine learning tasks, such as regression, association analysis, and tools for implementing and executing machine learning algorithms. As a summary of the Graph Analytics, the Path Analytics technique for finding the shortest path and the connectivity analysis technique for analyzing communities that we discussed earlier, are techniques used in graph analytics. As explained earlier, graph analytics is the field of analytics, where the underlying data is structured or can be modeled as a set of graphs. Our graph analytics course in the specialization will cover these and other graph techniques, and we'll also cover tools and platforms for graph analytics. In summary, analytic operations are used to discover meaningful patterns in the data in order to provide insights into the problem being studied. We looked at some of the examples of analytical operations for classification, cluster analysis, path analysis and connectivity analysis in this lecture.
 
+
+[Aggrigation Operation](https://www.geeksforgeeks.org/aggregation-in-mongodb/)  
+>  ***More about Aggrigation***
+>  
+>  Aggregation operations in big data pipelines involve combining multiple data records into a single summary record based on specified criteria. These operations are useful for generating key insights, performing calculations, and summarizing large volumes of data. Here are some common aggregation operations used in big data pipelines:
+>  
+>  1. Count: Counting is a simple aggregation operation that determines the number of occurrences of a particular attribute or event. For example, counting the number of sales transactions, the number of website visits, or the number of users in a specific category.
+>  
+>  2. Sum: The sum aggregation calculates the total of a numerical attribute or column. It is used to determine the total sales revenue, total expenses, or any other metric that requires adding up values.
+>  
+>  3. Average: The average (mean) aggregation operation calculates the arithmetic mean of a numerical attribute or column. It provides a measure of the central tendency and is used to determine the average sales price, average customer age, or other metrics where the average value is meaningful.
+>  
+>  4. Min and Max: The min and max aggregations determine the smallest and largest values, respectively, for a given attribute or column. They are used to identify the minimum and maximum values in a dataset, such as finding the minimum and maximum temperatures recorded, the earliest and latest dates, or the lowest and highest sales amounts.
+>  
+>  5. Group By: The group by operation is used to group data based on one or more attributes and perform aggregation operations within each group. For example, grouping sales data by region and calculating the total sales amount or average sales price for each region.
+>  
+>  6. Distinct Count: Distinct count is an aggregation operation that counts the number of unique values in a specific attribute or column. It is useful for determining the number of unique customers, unique product categories, or any other distinct count requirement.
+>  
+>  7. Percentiles: Percentiles are used to determine specific values in a distribution. For example, the 75th percentile (also known as the third quartile) represents the value below which 75% of the data falls. Percentiles help understand the spread and distribution of a dataset.
+>  
+>  8. Custom Aggregations: Big data pipelines often provide flexibility to define and perform custom aggregation operations based on specific business requirements. This can involve complex calculations, user-defined functions, or domain-specific aggregations.
+>  
+>  Aggregation operations in big data pipelines are often performed using distributed computing frameworks like Apache Spark, Apache Hadoop, or cloud-based services that provide scalability and parallel processing capabilities. These frameworks enable efficient aggregation of large volumes of data by distributing the computation across multiple nodes or clusters.
+>  
+>  By leveraging aggregation operations, organizations can summarize and gain insights from vast amounts of data, enabling data-driven decision-making and analysis at scale.
+
+
+> ***Tools and Systems: Big Data workflow Management***
+> 
+> Big data workflow management involves the coordination and execution of various tasks and processes in a big data pipeline. It ensures the smooth flow of data through the pipeline, orchestrates the execution of different steps, and manages dependencies between tasks. Several tools and systems are available to facilitate big data workflow management. Here are some popular ones:
+>  
+>  1. Apache Airflow: Apache Airflow is an open-source platform for orchestrating and scheduling complex workflows. It provides a rich set of operators and connectors for integrating with various data sources and tools. Airflow allows users to define workflows as directed acyclic graphs (DAGs) and provides a web-based UI for monitoring and managing workflow execution.
+>  
+>  2. Apache NiFi: Apache NiFi is an open-source data integration and workflow management tool. It provides a web-based interface for designing, managing, and monitoring data flows. NiFi supports a wide range of data sources and destinations and offers features like data routing, transformation, and flow control.
+>  
+>  3. Luigi: Luigi is a Python-based open-source workflow management system developed by Spotify. It allows users to define complex workflows as tasks and dependencies in Python code. Luigi provides features like scheduling, dependency resolution, and failure handling. It also has a web-based UI for monitoring workflow execution.
+>  
+>  4. Oozie: Oozie is a workflow scheduling and coordination system for Hadoop ecosystems. It allows users to define and manage workflows using XML-based configuration files. Oozie supports various Hadoop ecosystem components, including MapReduce, Hive, Pig, and Sqoop.
+>  
+>  5. Azkaban: Azkaban is a batch workflow job scheduler developed by LinkedIn. It provides a web-based interface for defining, scheduling, and monitoring workflows. Azkaban supports dependency management, failure handling, and email notifications.
+>  
+>  6. AWS Step Functions: AWS Step Functions is a fully managed service for building and running workflows on the Amazon Web Services (AWS) platform. It allows users to define workflows using a JSON-based state machine language. Step Functions supports coordination of AWS services, custom actions, and provides features like retries, error handling, and monitoring.
+>  
+>  7. Google Cloud Composer: Google Cloud Composer is a managed workflow orchestration service on the Google Cloud Platform (GCP). It is built on Apache Airflow and provides a fully managed environment for developing, scheduling, and monitoring workflows. Cloud Composer integrates with various GCP services and supports extensibility through Python scripts.
+>  
+>  8. Microsoft Azure Data Factory: Microsoft Azure Data Factory is a cloud-based data integration and workflow orchestration service. It allows users to create and manage data-driven workflows using a visual interface or JSON-based configuration files. Azure Data Factory supports hybrid data integration and offers connectors to various data sources and destinations.
+>  
+>  These tools and systems provide features like workflow design, scheduling, dependency management, failure handling, and monitoring, making it easier to manage and orchestrate big data workflows effectively. The choice of the tool depends on the specific requirements, infrastructure, and ecosystem of the organization.
+>
+> ***Big Data workflow Management - pig***
+> 
+> Pig is a high-level scripting language designed for processing and analyzing large datasets in Apache Hadoop. While Pig itself is not a dedicated big data workflow management tool, it can be used as part of a big data workflow management system to execute data processing tasks and integrate with other tools. Here's how Pig can be used in big data workflow management:
+>  
+>  1. Pig Latin Scripts: Pig Latin is the scripting language used in Apache Pig. It provides a simple and expressive way to write data processing logic for big data workflows. Pig Latin scripts consist of a series of statements that define data transformations and operations on large datasets.
+>  
+>  2. Data Processing: Pig enables data processing tasks on Hadoop clusters by translating Pig Latin scripts into MapReduce or Apache Tez jobs. These jobs can handle large volumes of data in a distributed manner, taking advantage of the parallel processing capabilities of Hadoop.
+>  
+>  3. Integration with Workflow Management Tools: Pig can be integrated with workflow management tools such as Apache Airflow, Apache Oozie, or custom workflow management systems. These tools can schedule and coordinate the execution of Pig scripts as part of a larger workflow, ensuring that data processing tasks are executed in the correct order and with the necessary dependencies.
+>  
+>  4. Data Transformation and Analysis: Pig provides a wide range of built-in operators and functions for data transformation and analysis. These include filtering, sorting, grouping, joining, aggregating, and performing custom transformations on datasets. Pig Latin scripts can be used to define the sequence of these operations to derive insights and generate output data.
+>  
+>  5. UDFs and Custom Functions: Pig allows the creation of User-Defined Functions (UDFs) and custom functions in languages such as Java, Python, or JavaScript. These functions can be used to extend Pig's capabilities by implementing custom data transformations or analysis operations specific to the requirements of the workflow.
+>  
+>  6. Script Reusability: Pig scripts can be modularized and reused across different workflows. This allows for code reuse and promotes efficiency in managing and maintaining big data workflows.
+>  
+>  7. Debugging and Optimization: Pig provides tools for debugging and optimizing Pig Latin scripts. It offers features such as data flow visualization, script testing, and query optimization techniques to improve the performance of data processing tasks.
+>  
+>  While Pig itself does not handle the complete workflow management, it serves as a powerful tool within the broader context of big data workflow management systems. By integrating Pig with workflow management tools, organizations can effectively orchestrate and manage complex data processing workflows, ensuring efficient and scalable analysis of big data.
