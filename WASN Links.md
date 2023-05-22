@@ -183,3 +183,65 @@
  >       2. Mesh-based Geocast Routing Protocol
 
 youtube video to know more about geocasting multicasting and broadcasting - https://www.youtube.com/watch?v=2jK3hNdM0Lk
+
+
+# Unit3
+#unit3 
+
+[Classification of wsn](https://assignmentpoint.com/classification-of-wireless-sensor-networks/)  
+[Mac in wsn](https://www.geeksforgeeks.org/mac-protocol-used-in-wireless-sensor-networks/)  
+[Architecture of wsn](https://www.elprocus.com/architecture-of-wireless-sensor-network-and-applications/)  
+[Application of wsn](https://encyclopedia.pub/entry/17294)  
+
+> ***Physical Layer***
+> 
+>   This layer transfers stream of bits over physical medium. Frequency selection, carrier frequency generation, signal detection, modulation and data encryption are main tasks of this layer. IEEE 802.15.4 is the suggested standard for Wireless sensor network with low cost, low complexity, low power consumption and low range of communication to maximize battery life.
+>   
+>   The Physical Layer in Wireless Sensor Networks (WSNs) is the lowest layer in the network protocol stack, responsible for the transmission and reception of raw data bits over the physical medium. It handles the physical characteristics of the wireless communication, including the modulation, encoding, and transmission of the signals. Here are some key aspects of the Physical Layer in WSNs:
+>
+>  1. Modulation and Encoding:
+   >  The Physical Layer utilizes modulation techniques to convert digital data into analog signals suitable for wireless transmission. Common modulation schemes used in WSNs include amplitude shift keying (ASK), frequency shift keying (FSK), and phase shift keying (PSK). These schemes encode the digital data into different signal properties, such as amplitude, frequency, or phase, to represent binary 0s and 1s.
+>
+>  2. Channel Access and Radio Propagation:
+     The Physical Layer deals with the challenges of wireless channel access and radio propagation in WSNs. It includes techniques for channel allocation and access control, such as Carrier Sense Multiple Access (CSMA) or Time Division Multiple Access (TDMA). Additionally, the Physical Layer considers radio propagation characteristics, including signal attenuation, path loss, interference, and multipath fading, which affect the reliability and quality of wireless communication.
+>
+>  3. Transceiver:
+     The Physical Layer operates through the transceiver, which is the hardware component responsible for transmitting and receiving radio signals. The transceiver contains a radio frequency (RF) module that performs the modulation, encoding, and decoding of signals. It also handles aspects such as transmission power control, frequency selection, and synchronization.
+>
+>  4. Antenna Design:
+     Antennas play a crucial role in the Physical Layer, as they transmit and receive radio signals. The design of antennas in WSNs is optimized for wireless communication within the desired range and coverage area. Various antenna types, such as omnidirectional antennas for broad coverage or directional antennas for focused transmission, can be used depending on the specific network requirements.
+>
+>  5. Signal Processing and Error Correction:
+     The Physical Layer may involve signal processing techniques to enhance the quality of received signals and mitigate the effects of noise, interference, and fading. Signal processing algorithms, such as filtering, equalization, and error correction codes (e.g., Reed-Solomon or convolutional codes), can be applied to improve the reliability and integrity of data transmission.
+>
+>  6. Power Management:
+     Power efficiency is a critical concern in WSNs due to limited energy resources in sensor nodes. The Physical Layer may incorporate power management techniques, such as adaptive transmission power control or duty cycling, to optimize energy consumption during wireless communication.
+>
+>  The specific implementation of the Physical Layer in WSNs depends on the chosen wireless technology (e.g., Wi-Fi, Bluetooth, Zigbee) and the specific requirements of the application and network design. Different physical layer standards and protocols may be utilized to address the unique challenges of WSNs, including low power consumption, reliable communication, and efficient use of the wireless medium.
+
+
+> ***Link layer***
+> 
+> Data link layer is used for multiplexing of data stream and medium and error control and data frame detection. Communication link between sensor nodes are created by MAC protocol considering power efficiency as most important.
+> 
+> In Wireless Sensor Networks (WSNs), the Link Layer is responsible for establishing and maintaining communication links between neighboring sensor nodes. It is the layer in the network protocol stack that handles the transmission of data frames over the wireless medium. The Link Layer performs several functions to ensure reliable and efficient data transmission within the network. Here are some key aspects of the Link Layer in WSNs:
+>
+>  1. Medium Access Control (MAC) Protocol:
+     The Link Layer in WSNs incorporates a MAC protocol that determines how sensor nodes access the shared wireless medium. The MAC protocol governs when and how nodes transmit data to avoid collisions and maximize channel utilization. Common MAC protocols used in WSNs include TDMA (Time Division Multiple Access), CSMA (Carrier Sense Multiple Access), and their variations.
+>
+>  2. Addressing and Framing:
+     The Link Layer assigns unique addresses to sensor nodes to identify them within the network. It also defines the frame structure, which encapsulates data from the upper layers for transmission. The frame typically includes fields for addressing, error checking, synchronization, and control information.
+>
+>  3. Reliable Data Delivery:
+     The Link Layer implements mechanisms to ensure reliable data delivery between neighboring nodes. It includes error detection and correction techniques, such as checksums or cyclic redundancy checks (CRC), to detect and correct transmission errors. Additionally, the Link Layer may incorporate acknowledgment mechanisms, such as acknowledgement frames or automatic retransmission, to handle packet loss and ensure reliable data transmission.
+>
+>  4. Neighbor Discovery and Management:
+     The Link Layer facilitates neighbor discovery, where sensor nodes identify and establish communication links with neighboring nodes within their transmission range. Neighbor management mechanisms monitor the presence, availability, and quality of neighboring nodes' links. This information helps in routing decisions and network maintenance.
+>
+>  5. Power Management:
+     Energy efficiency is a critical aspect of WSNs due to limited battery resources in sensor nodes. The Link Layer may incorporate power management techniques to optimize energy consumption, such as duty cycling, sleep-wake cycles, and adaptive transmission power control. These techniques help conserve energy and prolong the network lifetime.
+>
+>  6. Link Quality Estimation:
+     The Link Layer may also include mechanisms to estimate the quality of wireless links between nodes. Link quality estimation techniques measure signal strength, signal-to-noise ratio (SNR), or other metrics to assess the reliability and stability of communication links. This information is valuable for routing decisions and link reliability-aware protocols.
+>
+>  The specific design and features of the Link Layer in WSNs can vary depending on the network requirements, application scenarios, and protocol specifications. Different protocols and algorithms may be used to address the unique challenges of WSNs, such as limited resources, wireless channel characteristics, and node mobility.
