@@ -343,7 +343,7 @@ youtube video to know more about geocasting multicasting and broadcasting - http
 > 
 >  nkli mdu 🤦‍♂️ bs topic copy paste kr die. y apne aap m ek unit h🥲
 
-![6.png](./6.png)
+![6.png](6.png)
 
 >***Adaptive routing***
 >
