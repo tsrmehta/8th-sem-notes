@@ -29,8 +29,112 @@
 >  
 >  Addressing these challenges requires innovative solutions, including the development of efficient protocols, algorithms, and system designs tailored specifically for MANETs. Researchers and engineers continue to work on advancing the state-of-the-art to overcome these challenges and make MANETs more reliable, secure, and efficient.
 
-[Routing protocols](https://www.geeksforgeeks.org/manet-routing-protocols/)  
 
+> ***Topology based routing***
+> 
+>   Topology-based routing protocols depend on the information about existing links in the network and utilize them to carry out the task of packet forwarding.
+
+### Types of topology-based
+
+> ***Proactive routing protocol***
+>   
+>    These are also known as table-driven routing protocols. Each mobile node maintains a separate routing table which contains the information of the routes to all the possible destination mobile nodes. 
+>
+>   Since the topology in the mobile ad-hoc network is dynamic, these routing tables are updated periodically as and when the network topology changes. It has a limitation that it doesn’t work well for the large networks as the entries in the routing table becomes too large since they need to maintain the route information to all possible nodes.
+
+### Type of proactive protocols
+![Screenshot 2023-05-24 112917.png](./Screenshot%202023-05-24%20112917.png)
+![Screenshot 2023-05-24 112850.png](Screenshot%202023-05-24%20112850.png)
+
+>1. **DESTINATION-SEQUENCED DISTANCE-VECTOR PROTOCOL** : 
+>    
+>    The destination sequenced distance-vector (DSDV)  is a proactive hop-by-hop distance vector routing protocol, requiring each node to periodically broadcast routing updates. Here, every mobile node in the network maintains a routing table for all possible destinations within the network and the number of hops to each destination. Each entry is marked with a sequence number assigned by the destination node. The sequence numbers enable the mobile nodes to distinguish stale routes from new ones, thereby avoiding the formation of routing loops. Routing table updates are periodically transmitted throughout the network in order to maintain consistency in the table. To alleviate the potentially large amount of network update traffic, route updates can employ two possible types of packets: full dumps or small increment packets. A full dump type of packet carries all available routing information and can require multiple network protocol data units (NPDUs). These packets are transmitted infrequently during periods of occasional movement. Smaller incremental packets are used to relay only the information that has changed since the last full dump. Each of these broadcasts should fit into a standard-size NPDU, thereby decreasing the amount of traffic generated. The mobile nodes maintain an additional table where they store the data sent in the incremental routing information packets. New route broadcasts contain the address of the destination, the number of hops to reach the destination, the sequence number of the information received regarding the destination, as well as a new sequence number unique to the broadcast. The route labeled with the most recent sequence number is always used. In the event that two updates have the same sequence number, the route with the smaller metric is used in order to optimize (shorten) the path. Mobiles also keep track of settling time of the routes, or the weighted average time that routes to a destination could fluctuate before the route with the best metric is received. By delaying the broadcast of a routing update by the length of the settling time, mobiles can reduce network traffic and optimize routes by eliminating those broadcasts that would occur if a better route could be discovered in the very near future.
+>    used. In the event that two updates have the same sequence number, the route with the smaller metric is used in order to optimize (shorten) the path. Mobiles also keep track of settling time of the routes, or the weighted average time that routes to a destination could fluctuate before the route with the best metric is received. By delaying the broadcast of a routing update by the length of the settling time, mobiles can reduce network traffic and optimize routes by eliminating those broadcasts that would occur if a better route could be discovered in the very near future.
+>   ![Screenshot 2023-05-24 121638.png](Screenshot%202023-05-24%20121638.png)![Screenshot 2023-05-24 122644.png](Screenshot%202023-05-24%20122644.png)
+>   
+>   
+>    2. **THE WIRELESS ROUTING PROTOCOL** : 
+>    The Wireless Routing Protocol (WRP) described is a table-based protocol with the goal of maintaining routing information among all nodes in the network. Each node in the network is responsible for maintaining four tables: Distance table, Routing table, Link-cost table, and the Message Retransmission List (MRL) table. Each entry of the MRL contains the sequence number of the update message, a retransmission counter, an acknowledgment-required flag vector with one entry per neighbour, and a list of updates sent in the update message. The MRL records which updates in an update message need to be retransmitted and neighbours should acknowledge the retransmission. Mobiles inform each other of link changes through the use of update messages. An update message is sent only between neighbouring nodes and contains a list of updates (the destination, the distance to the destination, and the predecessor of the destination), as well as a list of responses indicating which mobiles should acknowledge (ACK) the update. After processing updates from neighbours or detecting a change in a link, mobiles send update messages to a neighbour. In the event of the loss of a link between two nodes, the nodes send update messages to their neighbours. The neighbours then modify their distance table entries and check for new possible paths through other nodes. Any new paths are relayed back to the original nodes so that they can update their tables accordingly.
+>    Nodes learn about the existence of their neighbours from the receipt of acknowledgments and other messages. If a node is not sending messages, it must send a hello message within a specified time period to ensure connectivity. Otherwise, the lack of messages from the node indicates the failure of that link; this may cause a false alarm. When a mobile receives a hello message from a new node, that new node is added to the mobiles routing table, and the mobile sends the new node a copy of its routing table information. Part of the novelty of WRP stems from the way in which it achieves freedom from loops. In WRP, routing nodes communicate the distance and second-to-last hop information for each destination in the wireless networks. WRP belongs to the class of path-finding algorithms with an important exception. It avoids the “count-to-infinity” problem by forcing each node to perform consistency checks of predecessor information reported by all its neighbour’s. This ultimately (although not instantaneously) eliminates looping situations and provides faster route convergence when a link failure occurs.
+>    ![Screenshot 2023-05-24 123258.png](Screenshot%202023-05-24%20123258.png)
+>    ![Screenshot 2023-05-24 123337.png](Screenshot%202023-05-24%20123337.png)
+>
+>   **Other methods** :
+>   3. The Topology Broadcast based on Reverse Path Forwarding Protocol
+>   4. The Optimized Link State Routing Protocol
+>   5. Multipoint Relays
+>   6. The Source Tree Adaptive Routing Protocol
+>    
+
+> ***Reactive routing protocols***
+> 
+>   These are also known as on-demand routing protocol. In this type of routing, the route is discovered only when it is required/needed. The process of route discovery occurs by flooding the route request packets throughout the mobile network. It consists of two major phases namely, route discovery and route maintenance.
+
+### Type of reactive routing protocols
+
+>  1. **DYNAMIC SOURCE ROUTING** : Theory in notes ![Screenshot 2023-05-24 124055.png](Screenshot%202023-05-24%20124055.png)![Screenshot 2023-05-24 124523.png](Screenshot%202023-05-24%20124523.png)
+>  2. **THE AD HOC ON-DEMAND DISTANCE VECTOR PROTOCOL** : theory in notes![Screenshot 2023-05-24 125308.png](Screenshot%202023-05-24%20125308.png)
+>  ![Screenshot 2023-05-24 125214.png](Screenshot%202023-05-24%20125214.png)
+>  Other without theory:
+>  1.  Link Reversal Routing and TORA
+
+> ***Hybrid Routing Protocols***
+>   It basically combines the advantages of both, reactive and pro-active routing protocols. These protocols are adaptive in nature and adapts according to the zone and position of the source and destination mobile nodes. One of the most popular hybrid routing protocol is **Zone Routing Protocol (ZRP)**. 
+>
+>   The whole network is divided into different zones and then the position of source and destination mobile node is observed. If the source and destination mobile nodes are present in the same zone, then proactive routing is used for the transmission of the data packets between them. And if the source and destination mobile nodes are present in different zones, then reactive routing is used for the transmission of the data packets between them.
+> ![Pasted image 20230524144620.jpg](Pasted%20image%2020230524144620.jpg)
+> 
+>  Types: 
+>   1. Zone Routing Protocol
+>   2. Fisheye State Routing
+>   3. Landmark Routing (LANMAR) for MANET with Group Mobility
+>   4. Cluster-Based Routing Protocol
+>   
+>   
+
+
+> ***position based routing***
+>
+>  Since mobile ad-hoc networks change their topology frequently and without prior notice, routing in such networks is a challenging task. Position-based routing algorithms eliminate some of the limitations of topology-based routing by using additional information. They require information about the physical position of the participating nodes in the network their availability. Commonly, each node determines its own position through the use of GPS or some other type of positioning service. Position based routing is mainly focused on two issues: one; A location service is used by the sender of a packet to determine the position of the destination and to include it in the packet's destination address and two; A forwarding strategy used to forward the packets. 
+>  
+>  A location service can be any one of the four:
+>    a) Some for some 
+>    b) Some for all 
+>    c) All for all 
+>    d) All for some. 
+>    Protocols are : 
+>    - Distance Routing Effect Algorithm for Mobility
+>    - Quorum-Based Location Service
+>    - Grid Location Service
+>    - Homezone
+>    
+>   A forwarding strategy can be like; 
+>    a) Greedy forwarding 
+>    b) Restricted directional flooding 
+>    >  Subtypes:
+>    >   1. DREAM
+>    >   2. Location-Aided Routing
+>    >   3. Relative Distance Micro-Discovery Ad Hoc Routing
+>    c) Hierarchical routing. 
+>    >Subtypes:
+>    >   1. Terminodes Routing
+>    >   2. Grid Routing
+>    >   3. Relative Distance Micro-Discovery Ad Hoc Routing
+>    
+>    
+>   The routing decision at each node is then based on the destination's position contained in the packet and the position of the forwarding node's neighbors. Position-based routing does not require the establishment or maintenance of routes. The nodes neither have to store routing tables nor do they need to transmit messages to keep routing tables up-to date.
+
+
+> ***OTHER ROUTING PROTOCOLS*** 
+>  
+ >   There is plenty of routing protocol proposals for mobile ad hoc networks. Our discussion here is far from being exhaustive. Below we will describe some other routing protocols which employ different optimization criteria as the ones we have previously described.
+ >   
+>   1. **SIGNAL STABILITY ROUTING** : Another on-demand protocol is the Signal Stability-Based Adaptive Routing protocol (SSR). Unlike the algorithms described so far, SSR selects routes based on the signal strength (weak or strong) between nodes and a node’s location stability. The signal strengths of neighboring nodes are obtained by periodic beacons from the link layer of each neighboring node. This route selection criterion of SSR has the effect of choosing routes that have “stronger” connectivity.
+>   2. **POWER AWARE ROUTING**: In this protocol, power-aware metrics are used for determining routes in wireless ad hoc networks. It has been shown that using these metrics in a shortest-cost routing algorithm reduces the cost/packet of routing packets by 5 - 30 percent over shortest-hop routing (this cost reduction is on top of a 40- 70 percent reduction in energy consumption over the MAC layer protocol used). Furthermore, using these new metrics ensures that mean time to node failure is increased significantly, but packet delays do not increase. A recent work concentrates on selecting a route based the traffic and congestion characteristics in the network.
+>   3. **ASSOCIATIVITY-BASED ROUTING** : This is a totally different approach in mobile routing. The Associativity-Based Routing (ABR) protocol is free from loops, deadlock, and packet duplicates, and defines a new routing metric for ad hoc mobile networks. In ABR, a route is selected based on a metric that is known as the degree of association stability. Each node periodically generates a beacon to signify its existence. When received by neighboring nodes, this beacon causes their associability tables to be updated. For each beacon received, the associatively tick of the current node with respect to the beaconing node is incremented. Association stability is defined by connection stability of one node with respect to another node over time and space. A high (low) degree of association stability may indicate a low (high) state of node mobility. Associability ticks are reset when the neighbors of a node or the node itself move out of proximity. A fundamental objective of ABR is to derive longer-lived routes for ad hoc networks. The three phases of ABR are: 
+>   • Route discovery, 
+>   • Route reconstruction (RRC), 
+>   • Route deletion
 
 # Unit2
 #unit2 
